@@ -1,2 +1,5 @@
-/.terraform
+# principal path
+**/.terraform
 .terraform.*
+terraform.*
+*.tfvars
