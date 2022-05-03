@@ -1,15 +1,16 @@
 # Author: Luis Angel Vanegas Martinez (xlavm)
 # Version: 1.0
 
+variable "hz_id" {}
+
 # LOCALS CONSTANTS
 /* 
 I declared the local constants
 */
 locals {
   PRINCIPAL_DOMAIN = "luisvanegas.co"
-  HOSTED_ZONE_ID   = "Z037462919PCGJ91EZV5G"
+  HOSTED_ZONE_ID   = var.hz_id
 }
-
 
 # HOSTED ZONE
 /* 

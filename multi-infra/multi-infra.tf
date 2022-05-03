@@ -6,6 +6,8 @@ this implementation is for multi infra and domains
 with multi buckets and multi CDN of cloudfront 
 */
 
+variable "hz_id" {}
+
 # DOMAINS LIST VARIABLE
 /* 
 I declared the list of domains in variable
@@ -20,7 +22,7 @@ I declared the local constants
 */
 locals {
   DOMAIN_NAMES_FOR_SSL = [for domain in var.domain_names : "*.${domain}"]
-  HOSTED_ZONE_ID       = "Z037462919PCGJ91EZV5G"
+  HOSTED_ZONE_ID       = var.hz_id
   PRINCIPAL_DOMAIN     = "luisvanegas.co"
 }
 

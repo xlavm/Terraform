@@ -1,6 +1,7 @@
 # Author: Luis Angel Vanegas Martinez (xlavm)
 # Version: 1.0
 
+//this variables are used from terraform.tfvars file
 variable "access_key" {}
 variable "secret_key" {}
 variable "region" {}
